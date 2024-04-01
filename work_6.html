@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elin - Makeup</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #ededed;
+        }
+        .container {
+          max-width: 1200px;
+          margin: auto;
+          padding: 20px;
+        }
+        .logo {
+            max-width: 100px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 3px;
+            border-radius: 50%;
+            box-shadow: 3px 3px 6px #cccccc, -3px -3px 6px #fff;
+        }
+        .logo, .main-banner, .posters, .products {
+          margin-bottom: 20px;
+        }
+        .logo img, .main-banner img, .posters img, .products img {
+          width: 100%;
+          height: auto;
+          display: block;
+        }
+        #back-button {
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 3px 3px 6px #cccccc, -3px -3px 6px #fff;
+            margin-bottom: 20px;
+            max-width: 100px;
+            max-height: 20px;
+        } #back-button:hover {background-color: #333333; border-radius: 15px; color: #ededed;}
+        .row {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+        }
+        .column {
+          flex-basis: 48%; /* Adjust the width of columns */
+        }
+        @media (max-width: 768px) {
+          .column {
+            flex-basis: 100%;
+          }
+        }
+      </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+          <!-- Replace 'logo.jpg' with your actual logo image -->
+          <img src="images/elin-logo.png" alt="Logo">
+        </div>
+
+        <div id="back-button">
+            <a href="index.html">BACK</a>
+        </div>
+        
+        <div class="main-banner">
+          <!-- Replace 'main-banner.jpg' with your actual horizontal banner image -->
+          <img src="images/elin-bg.png" alt="Main Banner">
+        </div>
+        
+        <div class="row">
+          <div class="column posters">
+            <!-- Replace 'poster1.jpg', 'poster2.jpg', 'poster3.jpg' with your actual vertical poster images -->
+            <img src="images/elin-pic1.jpg" alt="Poster 1">
+            <img src="images/elin-pic2.jpg" alt="Poster 2">
+            <img src="images/elin-pic3.jpg" alt="Poster 3">
+          </div>
+          
+          <div class="column products">
+            <!-- Replace 'product1.jpg', 'product2.jpg', 'product3.jpg' with your actual vertical product images -->
+            <img src="images/elin_p1.png" alt="Product 1">
+            <img src="images/elin_p2.png" alt="Product 2">
+            <img src="images/elin_p3.png" alt="Product 3">
+          </div>
+        </div>
+      </div>
+</body>
+</html>
